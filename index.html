@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaxMe - //Your Security</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'VT323';
+            src: url('https://fonts.gstatic.com/s/vt323/v17/pxiKyp0ihIEF2isfFJA.woff2') format('woff2');
+        }
+
+        .terminal-font {
+            font-family: 'VT323', monospace;
+        }
+
+        .matrix-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+                        repeating-linear-gradient(0deg, 
+                            transparent 0px,
+                            transparent 2px,
+                            rgba(0, 255, 0, 0.1) 3px,
+                            rgba(0, 255, 0, 0.1) 3px);
+        }
+
+        .glitch {
+            animation: glitch 1s linear infinite;
+        }
+
+        @keyframes glitch {
+            2%, 64% {
+                transform: translate(2px,0) skew(0deg);
+            }
+            4%, 60% {
+                transform: translate(-2px,0) skew(0deg);
+            }
+            62% {
+                transform: translate(0,0) skew(5deg);
+            }
+        }
+
+        .terminal-window {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #00ff00;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+        }
+
+        .logo-img {
+            height: 40px;
+            width: 40px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .icon-container {
+            display: inline-block;
+            width: 20px;
+            text-align: center;
+            margin-right: 8px;
+        }
+        
+        .resource-link {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-black text-green-400 matrix-bg min-h-screen">
+    <header class="py-6">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <div class="text-3xl terminal-font flex items-center">
+                <img src="https://avatars.githubusercontent.com/u/6158646?s=200&v=4" alt="HaxMe Logo" class="logo-img">
+                #haxme
+            </div>
+        <!--
+            <div class="space-x-6 terminal-font text-lg">
+                <a href="#about" class="hover:text-green-300 transition-colors">[Home]</a>
+                <a href="#learn" class="hover:text-green-300 transition-colors">[About]</a>
+                <a href="#community" class="hover:text-green-300 transition-colors">[Learn]</a>
+                <a href="#contact" class="hover:text-green-300 transition-colors">[Community]</a>
+            </div>
+        -->
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="text-center mb-4">
+            <h1 class="text-6xl terminal-font mb-6 glitch">
+                Security, Privacy, Freedom.
+            </h1>
+            <p class="text-xl mb-8 text-green-300">
+                Est. in 2008 - A group of hackers dedicated to individual knowledge and growth.
+            </p>
+            <div class="terminal-window p-6 rounded-lg max-w-2xl mx-auto">
+                <p class="terminal-font">
+                    <span class="text-green-500">guest@haxme</span>:<span class="text-blue-400">~</span>$ ./welcome.sh<br>
+                    Initializing secure connection... [OK]<br />
+                    Rendering view... [OK]<br />
+                    Loading HaxMe...<br />
+                    [████████████████████] 100%<br />
+                    System ready - let's learn!
+                </p>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-8 mb-8">
+            <div class="terminal-window p-6 rounded-lg">
+                <h2 class="terminal-font text-2xl mb-4">> Our Mission</h2>
+                <p class="text-green-300 mb-2">
+                    A community of hackers, engineers, and educators who are dedicated to learning about security, privacy, and user-freedom. We learn async on Discord, publish papers, push code, hack & tinker.
+                </p>
+                
+                <p class="text-green-300 text-xs italic ml-4 mb-2">
+                    Hackers think. They analyze. They tinker, take-apart, modify, question, experiment, and re-build. Fueled by curiosity, they understand that at bottom, they are the ones in control. That if their computer, their program, or any other device does not work, it is the fault of the user and is an opportunity for learning. They understand that actions speak louder than words. They judge others by ideas, actions, and merit; not by skin color, nationality, or religious bias. Every hacker brings a unique perspective, skill set, background, and experience. Differences in skills, thoughts, values, and ideas allow us to exchange information and do what we do best: hack. 
+                </p>
+
+                <p class="text-green-300">
+                    Come curious, stay humble, keep hacking.
+                </p>
+            </div>
+            <div class="terminal-window p-6 rounded-lg">
+                <h2 class="terminal-font text-2xl mb-4">> Getting Started</h2>
+                <ul class="text-green-300 space-y-2">
+                    <li class="flex items-center">
+                        <span class="icon-container">
+                            <i class="fas fa-file-code text-green-500"></i>
+                        </span>
+                        <a href="p/manifesto.txt" target="_blank" class="hover:text-green-400 transition-colors">Hacker's Manifesto</a>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="icon-container">
+                            <i class="fas fa-book text-green-500"></i>
+                        </span>
+                        <a href="https://archive.org/stream/TheHackersHandbook/The%20hackers%27%20handbook_djvu.txt" target="_blank" class="hover:text-green-400 transition-colors">The Hacker's Handbook</a>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="icon-container">
+                            <i class="fas fa-landmark text-green-500"></i>
+                        </span>
+                        <a href="https://mijowa.github.io/CatB/" target="_blank" class="hover:text-green-400 transition-colors">The Cathedral and the Bazaar</a>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="icon-container">
+                            <i class="fas fa-graduation-cap text-green-500"></i>
+                        </span>
+                        <a href="https://people.eecs.berkeley.edu/~bh/ss-toc2.html" target="_blank" class="hover:text-green-400 transition-colors">Simply Scheme: Intro to CS</a>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="icon-container">
+                            <i class="fas fa-terminal text-green-500"></i>
+                        </span>
+                        <a href="https://sarabander.github.io/sicp/html/" target="_blank" class="hover:text-green-400 transition-colors">SICP</a>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="icon-container">
+                            <i class="fab fa-linux text-green-500"></i>
+                        </span>
+                        <a href="http://www.catb.org/esr/writings/taoup/html/" target="_blank" class="hover:text-green-400 transition-colors">The Art of Unix Programming</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="text-center mb-16">
+            <h2 class="terminal-font text-4xl mb-6">Join Our Discord</h2>
+            <div class="terminal-window p-6 rounded-lg max-w-xl mx-auto">
+                <p class="text-green-300 mb-4"><span class="text-green-500">$</span> Connect with our crew of security enthusiasts, hackers, and engineers.</p>
+                <a href="https://discord.gg/mc3VNzhrnk" 
+                   class="inline-block bg-purple-500 text-white px-8 py-3 rounded terminal-font hover:bg-purple-400 transition-colors">
+                   <i class="fab fa-discord mr-2 text-xl"></i>Connect to Discord
+                </a>
+            </div>
+        </section>
+
+        <footer class="text-center terminal-font text-sm">
+            <p>Established in 2008 | All knowledge is open</p>
+            <p class="mt-2">
+                <span class="text-green-500">[</span>
+                <a href="https://github.com/haxme" target="_blank"><i class="fab fa-github"></i> Github</a>
+                <span class="text-green-500">]</span>
+            </p>
+        </footer>
+    </main>
+</body>
+</html>
